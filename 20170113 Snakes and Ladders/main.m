@@ -7,11 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Player.h"
+#import "PlayerManager.h"
+#import "InputManager.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+    PlayerManager *managePlayers = [[PlayerManager alloc] init];
+    InputManager *handleInput = [[InputManager alloc] init];
+    BOOL gameOver = NO;
+    BOOL restartGame = YES;
+    while (restartGame == YES) {
+        [managePlayers createPlayers:[handleInput enterPlayers]];
+        while (gameOver == NO) {
+            if ([managePlayers roll]) {
+                gameOver = YES;
+            }
+        }
+        if ([handleInput playAgain]) {
+            [managePlayers resetGame];
+            gameOver = NO;
+            continue;
+        }
+        else {
+            restartGame = NO;
+        }
     }
     return 0;
 }

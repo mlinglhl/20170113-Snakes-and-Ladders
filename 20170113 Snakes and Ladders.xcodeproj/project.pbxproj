@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8987B7271E29A53300EAF01F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B7261E29A53300EAF01F /* main.m */; };
+		8987B72F1E29ABB200EAF01F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987B72E1E29ABB200EAF01F /* Player.m */; };
+		89A0BE0B1E2A9E38007B4B61 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A0BE0A1E2A9E38007B4B61 /* PlayerManager.m */; };
+		89A0BE0E1E2AA2DD007B4B61 /* InputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A0BE0D1E2AA2DD007B4B61 /* InputManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		8987B7231E29A53300EAF01F /* 20170113 Snakes and Ladders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "20170113 Snakes and Ladders"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8987B7261E29A53300EAF01F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8987B72D1E29ABB200EAF01F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		8987B72E1E29ABB200EAF01F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		89A0BE091E2A9E38007B4B61 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		89A0BE0A1E2A9E38007B4B61 /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
+		89A0BE0C1E2AA2DD007B4B61 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		89A0BE0D1E2AA2DD007B4B61 /* InputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				8987B7261E29A53300EAF01F /* main.m */,
+				89A0BE0C1E2AA2DD007B4B61 /* InputManager.h */,
+				89A0BE0D1E2AA2DD007B4B61 /* InputManager.m */,
+				89A0BE091E2A9E38007B4B61 /* PlayerManager.h */,
+				89A0BE0A1E2A9E38007B4B61 /* PlayerManager.m */,
+				8987B72D1E29ABB200EAF01F /* Player.h */,
+				8987B72E1E29ABB200EAF01F /* Player.m */,
 			);
 			path = "20170113 Snakes and Ladders";
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A0BE0E1E2AA2DD007B4B61 /* InputManager.m in Sources */,
+				8987B72F1E29ABB200EAF01F /* Player.m in Sources */,
+				89A0BE0B1E2A9E38007B4B61 /* PlayerManager.m in Sources */,
 				8987B7271E29A53300EAF01F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +264,7 @@
 				8987B72C1E29A53300EAF01F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
